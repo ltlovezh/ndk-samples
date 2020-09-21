@@ -30,6 +30,7 @@ declare projects=(
     native-media
     native-plasma
     prefab/curl-ssl
+    prefab/prefab-publishing
     san-angeles
     sensor-graph
 #    webp
@@ -67,7 +68,7 @@ declare apks=(
   endless-tunnel/app/build/outputs/apk/debug/app-debug.apk
   gles3jni/app/build/outputs/apk/debug/app-debug.apk
   hello-gl2/app/build/outputs/apk/debug/app-debug.apk
-  hello-jni/app/build/outputs/apk/arm7/debug/app-arm7-debug.apk
+  hello-jni/app/build/outputs/apk/arm8/debug/app-arm8-debug.apk
   hello-jniCallback/app/build/outputs/apk/debug/app-debug.apk
   hello-libs/app/build/outputs/apk/debug/app-debug.apk
   hello-neon/app/build/outputs/apk/debug/app-debug.apk
@@ -77,6 +78,7 @@ declare apks=(
   native-media/app/build/outputs/apk/debug/app-debug.apk
   native-plasma/app/build/outputs/apk/debug/app-debug.apk
   prefab/curl-ssl/app/build/outputs/apk/debug/app-debug.apk
+  prefab/prefab-publishing/mylibrary/build/outputs/aar/mylibrary-debug.aar
   sensor-graph/accelerometer/build/outputs/apk/debug/accelerometer-debug.apk
   san-angeles/app/build/outputs/apk/debug/app-armeabi-v7a-debug.apk
   san-angeles/app/build/outputs/apk/debug/app-arm64-v8a-debug.apk
