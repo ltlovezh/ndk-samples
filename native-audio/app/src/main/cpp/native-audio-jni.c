@@ -141,7 +141,7 @@ short* createResampledBuf(uint32_t idx, uint32_t srcRate, unsigned *size) {
     short  *src = NULL;
     short  *workBuf;
     int    upSampleRate;
-    int32_t srcSampleCount = 0;
+    int32_t srcSampleCount = 0; // 采样点个数
 
     if(0 == bqPlayerSampleRate) {
         return NULL;
@@ -676,7 +676,7 @@ Java_com_example_nativeaudio_NativeAudio_selectClip(JNIEnv* env, jclass clazz, j
         // we recorded at 16 kHz, but are playing buffers at 8 Khz, so do a primitive down-sample
         if(!nextBuffer) {
             unsigned i;
-            for (i = 0; i < recorderSize; i += 2 * sizeof(short)) {
+            for (i = 0; i < recorderSize; i += 2 * sizeof(short)) { // 减少一半的采样点
                 recorderBuffer[i >> 2] = recorderBuffer[i >> 1];
             }
             recorderSize >>= 1;
